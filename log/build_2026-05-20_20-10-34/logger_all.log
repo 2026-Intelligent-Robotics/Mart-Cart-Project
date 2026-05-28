@@ -1,0 +1,441 @@
+[0.198s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.198s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f61cc2a8cd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f61cc21e3e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f61cc21e3e0>>, mixin_verb=('build',))
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.340s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ap432/Mart-Cart-Project'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_bringup) by extension 'ros'
+[0.359s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_robot/tiago_bringup' with type 'ros.ament_cmake' and name 'tiago_bringup'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_controller_configuration) by extension 'ros'
+[0.360s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_robot/tiago_controller_configuration' with type 'ros.ament_cmake' and name 'tiago_controller_configuration'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_description) by extension 'ros'
+[0.361s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_robot/tiago_description' with type 'ros.ament_cmake' and name 'tiago_description'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extension 'colcon_meta'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extensions ['ros']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_robot/tiago_robot) by extension 'ros'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_robot/tiago_robot' with type 'ros.ament_cmake' and name 'tiago_robot'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'colcon_meta'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['ros']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'ros'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['cmake', 'python']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'cmake'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'python'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extensions ['python_setup_py']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation) by extension 'python_setup_py'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'ros'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['cmake', 'python']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'cmake'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'python'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extensions ['python_setup_py']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc) by extension 'python_setup_py'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'ros'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['cmake', 'python']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'cmake'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'python'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extensions ['python_setup_py']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/doc/media) by extension 'python_setup_py'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_gazebo) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_simulation/tiago_gazebo' with type 'ros.ament_cmake' and name 'tiago_gazebo'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_multi) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_multi) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_multi) ignored
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(tiago_simulation/tiago_simulation) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'tiago_simulation/tiago_simulation' with type 'ros.ament_cmake' and name 'tiago_simulation'
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.392s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/ap432/ros2_ws/install
+[0.394s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 436 installed packages in /opt/ros/humble
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'tiago_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.442s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_description', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_description', 'symlink_install': True, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_bringup', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'tiago_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_gazebo', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_robot', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_robot', 'symlink_install': True, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'tiago_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ap432/Mart-Cart-Project/build/tiago_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ap432/Mart-Cart-Project/install/tiago_simulation', 'merge_install': False, 'path': '/home/ap432/Mart-Cart-Project/tiago_simulation/tiago_simulation', 'symlink_install': True, 'test_result_base': None}
+[0.444s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.446s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.446s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_controller_configuration' with build type 'ament_cmake'
+[0.446s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_controller_configuration'
+[0.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_description' with build type 'ament_cmake'
+[0.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_description'
+[0.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_controller_configuration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_description': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_description
+[1.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_controller_configuration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration
+[1.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_controller_configuration -- -j22 -l22
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_controller_configuration -- -j22 -l22
+[1.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_controller_configuration
+[1.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_controller_configuration)
+[1.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_controller_configuration
+[1.426s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration' for CMake module files
+[1.427s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration' for CMake config files
+[1.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_controller_configuration', 'cmake_prefix_path')
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.sh'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/bin'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/lib/pkgconfig/tiago_controller_configuration.pc'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/lib/python3.10/site-packages'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/bin'
+[1.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.ps1'
+[1.431s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.dsv'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.sh'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.bash'
+[1.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.zsh'
+[1.436s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/colcon-core/packages/tiago_controller_configuration)
+[1.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_controller_configuration)
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration' for CMake module files
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration' for CMake config files
+[1.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_controller_configuration', 'cmake_prefix_path')
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/hook/cmake_prefix_path.sh'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/bin'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/lib/pkgconfig/tiago_controller_configuration.pc'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/lib/python3.10/site-packages'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/bin'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.ps1'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.dsv'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.sh'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.bash'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/tiago_controller_configuration/package.zsh'
+[1.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration/share/colcon-core/packages/tiago_controller_configuration)
+[1.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_description
+[1.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_description': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_description -- -j22 -l22
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_description -- -j22 -l22
+[2.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_description': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_description
+[2.663s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_description)
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description' for CMake module files
+[2.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_description
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description' for CMake config files
+[2.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_description', 'cmake_prefix_path')
+[2.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.ps1'
+[2.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.dsv'
+[2.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.sh'
+[2.666s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/bin'
+[2.666s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/lib/pkgconfig/tiago_description.pc'
+[2.666s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/lib/python3.10/site-packages'
+[2.667s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/bin'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.ps1'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.dsv'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.sh'
+[2.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.bash'
+[2.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.zsh'
+[2.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_description/share/colcon-core/packages/tiago_description)
+[2.669s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_description)
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description' for CMake module files
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description' for CMake config files
+[2.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_description', 'cmake_prefix_path')
+[2.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.ps1'
+[2.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.dsv'
+[2.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/hook/cmake_prefix_path.sh'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/bin'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/lib/pkgconfig/tiago_description.pc'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/lib/python3.10/site-packages'
+[2.671s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_description/bin'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.ps1'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.dsv'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.sh'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.bash'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_description/share/tiago_description/package.zsh'
+[2.672s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_description/share/colcon-core/packages/tiago_description)
+[2.672s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_bringup' with build type 'ament_cmake'
+[2.672s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_bringup'
+[2.672s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.673s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_bringup
+[3.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_bringup
+[3.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_bringup -- -j22 -l22
+[3.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_bringup -- -j22 -l22
+[3.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_bringup
+[3.502s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_bringup)
+[3.503s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup' for CMake module files
+[3.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_bringup' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_bringup
+[3.504s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup' for CMake config files
+[3.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_bringup', 'cmake_prefix_path')
+[3.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.ps1'
+[3.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.dsv'
+[3.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.sh'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/bin'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib/pkgconfig/tiago_bringup.pc'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib/python3.10/site-packages'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/bin'
+[3.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.ps1'
+[3.506s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.dsv'
+[3.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.sh'
+[3.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.bash'
+[3.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.zsh'
+[3.507s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/colcon-core/packages/tiago_bringup)
+[3.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_bringup)
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup' for CMake module files
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup' for CMake config files
+[3.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_bringup', 'cmake_prefix_path')
+[3.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.ps1'
+[3.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.dsv'
+[3.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/hook/cmake_prefix_path.sh'
+[3.509s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib'
+[3.509s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/bin'
+[3.509s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib/pkgconfig/tiago_bringup.pc'
+[3.510s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/lib/python3.10/site-packages'
+[3.510s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_bringup/bin'
+[3.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.ps1'
+[3.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.dsv'
+[3.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.sh'
+[3.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.bash'
+[3.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/tiago_bringup/package.zsh'
+[3.511s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_bringup/share/colcon-core/packages/tiago_bringup)
+[3.512s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo' with build type 'ament_cmake'
+[3.512s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo'
+[3.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.513s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.516s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_robot' with build type 'ament_cmake'
+[3.516s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ap432/Mart-Cart-Project/tiago_robot/tiago_robot'
+[3.516s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo
+[3.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_robot': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_robot
+[4.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_robot' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_robot/tiago_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_robot
+[4.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_robot': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_robot -- -j22 -l22
+[4.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_robot' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_robot -- -j22 -l22
+[4.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_robot': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_robot
+[4.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_robot)
+[4.185s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot' for CMake module files
+[4.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_robot' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_robot
+[4.185s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot' for CMake config files
+[4.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_robot', 'cmake_prefix_path')
+[4.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.ps1'
+[4.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.dsv'
+[4.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.sh'
+[4.187s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/bin'
+[4.187s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/lib/pkgconfig/tiago_robot.pc'
+[4.187s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/lib/python3.10/site-packages'
+[4.187s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/bin'
+[4.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.ps1'
+[4.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.dsv'
+[4.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.sh'
+[4.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.bash'
+[4.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.zsh'
+[4.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_robot/share/colcon-core/packages/tiago_robot)
+[4.189s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_robot)
+[4.189s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot' for CMake module files
+[4.190s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot' for CMake config files
+[4.190s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiago_robot', 'cmake_prefix_path')
+[4.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.ps1'
+[4.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.dsv'
+[4.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/hook/cmake_prefix_path.sh'
+[4.191s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/bin'
+[4.191s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/lib/pkgconfig/tiago_robot.pc'
+[4.191s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/lib/python3.10/site-packages'
+[4.192s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_robot/bin'
+[4.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.ps1'
+[4.193s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.dsv'
+[4.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.sh'
+[4.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.bash'
+[4.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_robot/share/tiago_robot/package.zsh'
+[4.194s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_robot/share/colcon-core/packages/tiago_robot)
+[4.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo' returned '1': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo
+[4.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiago_gazebo)
+[4.636s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo' for CMake module files
+[4.636s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo' for CMake config files
+[4.636s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/bin'
+[4.636s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/lib/pkgconfig/tiago_gazebo.pc'
+[4.637s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/lib/python3.10/site-packages'
+[4.637s] Level 1:colcon.colcon_core.environment:checking '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/bin'
+[4.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.ps1'
+[4.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.dsv'
+[4.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.sh'
+[4.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.bash'
+[4.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.zsh'
+[4.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/colcon-core/packages/tiago_gazebo)
+[4.649s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.649s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.649s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.649s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.657s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.658s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.658s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[4.658s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ap432/Mart-Cart-Project/install/local_setup.ps1'
+[4.659s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ap432/Mart-Cart-Project/install/_local_setup_util_ps1.py'
+[4.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ap432/Mart-Cart-Project/install/setup.ps1'
+[4.662s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ap432/Mart-Cart-Project/install/local_setup.sh'
+[4.663s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ap432/Mart-Cart-Project/install/_local_setup_util_sh.py'
+[4.663s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ap432/Mart-Cart-Project/install/setup.sh'
+[4.664s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ap432/Mart-Cart-Project/install/local_setup.bash'
+[4.665s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ap432/Mart-Cart-Project/install/setup.bash'
+[4.666s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ap432/Mart-Cart-Project/install/local_setup.zsh'
+[4.667s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ap432/Mart-Cart-Project/install/setup.zsh'
