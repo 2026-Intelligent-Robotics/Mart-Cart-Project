@@ -1,0 +1,1 @@
+/home/ap432/Mart-Cart-Project/build/tiago_bringup/ament_cmake_environment_hooks/local_setup.sh

@@ -64,6 +64,10 @@ def declare_actions(
             "robot_description",
             "-entity",
             LaunchConfiguration("robot_name"),
+            "-x", "5.0",
+            "-y", "-3.0",
+            "-z", "0.0",
+            "-Y", "1.5708",  # 마트 안쪽(북쪽) 방향
         ],
         output="screen",
         condition=LaunchConfigurationEquals('gazebo_version', 'classic'),

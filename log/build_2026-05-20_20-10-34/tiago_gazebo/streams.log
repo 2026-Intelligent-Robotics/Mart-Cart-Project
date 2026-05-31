@@ -1,0 +1,58 @@
+[0.031s] Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo
+[0.061s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.107s] -- Detecting C compiler ABI info
+[0.160s] -- Detecting C compiler ABI info - done
+[0.165s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.166s] -- Detecting C compile features
+[0.166s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.226s] -- Detecting CXX compiler ABI info - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.232s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.235s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.372s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.432s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.526s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.531s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.550s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.569s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.580s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.580s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.581s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.581s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.600s] -- Found PythonExtra: .so  
+[0.687s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.693s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.705s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.747s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.812s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.818s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.853s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.868s] -- Looking for pthread.h
+[0.933s] -- Looking for pthread.h - found
+[0.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.979s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.979s] -- Found Threads: TRUE  
+[1.102s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[1.102s]   By not providing "Findplay_motion2_msgs.cmake" in CMAKE_MODULE_PATH this
+[1.102s]   project has asked CMake to find a package configuration file provided by
+[1.102s]   "play_motion2_msgs", but CMake did not find one.
+[1.102s] 
+[1.102s]   Could not find a package configuration file provided by "play_motion2_msgs"
+[1.102s]   with any of the following names:
+[1.102s] 
+[1.102s]     play_motion2_msgsConfig.cmake
+[1.102s]     play_motion2_msgs-config.cmake
+[1.102s] 
+[1.102s]   Add the installation prefix of "play_motion2_msgs" to CMAKE_PREFIX_PATH or
+[1.102s]   set "play_motion2_msgs_DIR" to a directory containing one of the above
+[1.102s]   files.  If "play_motion2_msgs" provides a separate development package or
+[1.102s]   SDK, be sure it has been installed.
+[1.102s] 
+[1.102s] [0m
+[1.103s] -- Configuring incomplete, errors occurred!
+[1.103s] See also "/home/ap432/Mart-Cart-Project/build/tiago_gazebo/CMakeFiles/CMakeOutput.log".
+[1.115s] Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo' returned '1': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo

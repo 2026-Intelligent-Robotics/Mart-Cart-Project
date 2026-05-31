@@ -1,0 +1,74 @@
+[0.012s] Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo
+[0.023s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.127s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.190s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.191s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.196s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.215s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.215s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.215s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.246s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.248s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.251s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.267s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.342s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.344s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.357s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.422s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.431s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.432s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.432s] -- Configured cppcheck include dirs: 
+[0.432s] -- Configured cppcheck exclude dirs and/or files: 
+[0.433s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.433s] -- Configured cpplint exclude dirs and/or files: 
+[0.433s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.434s] -- Added test 'lint_cmake' to check CMake code style
+[0.434s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.435s] -- Added test 'uncrustify' to check C / C++ code style
+[0.435s] -- Configured uncrustify additional arguments: 
+[0.435s] -- Added test 'xmllint' to check XML markup files
+[0.437s] -- Configuring done
+[0.447s] -- Generating done
+[0.451s] -- Build files have been written to: /home/ap432/Mart-Cart-Project/build/tiago_gazebo
+[0.455s] Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ap432/Mart-Cart-Project/install/tiago_gazebo
+[0.457s] Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_gazebo -- -j22 -l22
+[0.488s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.488s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.282s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.303s] [ 50%] Built target gtest_main
+[3.186s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.225s] [ 66%] Built target gtest
+[3.235s] [ 83%] [32mBuilding CXX object CMakeFiles/tuck_arm_test.dir/test/tuck_arm_test.cpp.o[0m
+[13.929s] [100%] [32m[1mLinking CXX executable tuck_arm_test[0m
+[14.576s] [100%] Built target tuck_arm_test
+[14.589s] Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ap432/Mart-Cart-Project/build/tiago_gazebo -- -j22 -l22
+[14.590s] Invoking command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_gazebo
+[14.595s] -- Install configuration: ""
+[14.595s] -- Execute custom install script
+[14.595s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/lib/tiago_gazebo/tuck_arm.py
+[14.601s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/test/tuck_arm_test
+[14.606s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/config/tiago.rviz
+[14.611s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/config/tiago_gz_bridge.yaml
+[14.616s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/config/wbc.rviz
+[14.621s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/launch/mart_cart_tiago.launch.py
+[14.626s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/launch/navigation_private_sim.launch.py
+[14.631s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/launch/navigation_public_sim.launch.py
+[14.636s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/launch/robot_spawn.launch.py
+[14.642s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/launch/tiago_gazebo.launch.py
+[14.648s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/ament_index/resource_index/package_run_dependencies/tiago_gazebo
+[14.656s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/ament_index/resource_index/parent_prefix_path/tiago_gazebo
+[14.660s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/environment/ament_prefix_path.sh
+[14.666s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/environment/ament_prefix_path.dsv
+[14.670s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/environment/path.sh
+[14.676s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/environment/path.dsv
+[14.681s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/local_setup.bash
+[14.686s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/local_setup.sh
+[14.694s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/local_setup.zsh
+[14.699s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/local_setup.dsv
+[14.705s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.dsv
+[14.712s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/ament_index/resource_index/packages/tiago_gazebo
+[14.719s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig.cmake
+[14.729s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig-version.cmake
+[14.735s] -- Symlinking: /home/ap432/Mart-Cart-Project/install/tiago_gazebo/share/tiago_gazebo/package.xml
+[14.744s] Invoked command in '/home/ap432/Mart-Cart-Project/build/tiago_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ap432/Mart-Cart-Project/install/tiago_bringup:/home/ap432/Mart-Cart-Project/install/tiago_description:/home/ap432/Mart-Cart-Project/install/tiago_controller_configuration:/home/ap432/ros2_ws/install/slam:/home/ap432/ros2_ws/install/nav2:/home/ap432/ros2_ws/install/sensor:/home/ap432/ros2_ws/install/robot_description:/home/ap432/ros2_ws/install/multi_robot:/home/ap432/ros2_ws/install/gazebo_simulation:/home/ap432/ros2_ws/install/basics:/opt/ros/humble:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/ap432/Mart-Cart-Project/install/tiago_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ap432/Mart-Cart-Project/build/tiago_gazebo
