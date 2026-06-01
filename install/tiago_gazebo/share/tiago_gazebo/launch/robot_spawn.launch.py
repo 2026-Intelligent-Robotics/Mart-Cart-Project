@@ -1,1 +1,0 @@
-/home/ap432/Mart-Cart-Project/tiago_simulation/tiago_gazebo/launch/robot_spawn.launch.py

@@ -1,1 +1,0 @@
-/home/ap432/Mart-Cart-Project/build/tiago_description/ament_cmake_environment_hooks/pythonpath.sh
