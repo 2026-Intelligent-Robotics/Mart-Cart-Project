@@ -13,10 +13,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='gaeun',
-    maintainer_email='glad@ewha.ac.kr',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='EWHA Dynamics',
+    description='Human following and shelf docking system using LiDAR',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',
@@ -25,6 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'human_following = cart_control.human_following:main',
+            'shelf_docking = cart_control.shelf_docking:main',
+            'object_detector = cart_control.object_detector:main',
         ],
     },
 )
