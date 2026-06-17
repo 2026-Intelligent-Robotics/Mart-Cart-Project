@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, JointState
 from geometry_msgs.msg import PoseStamped
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from visualization_msgs.msg import Marker  # RViz 시각화 마커 메시지 타입 임포트
@@ -21,6 +21,7 @@ class ObjectDetector(Node):
         
         self.current_rgb = None   # 현재 프레임의 RGB 이미지 데이터 저장 변수 초기화
         self.current_depth = None # 현재 프레임의 32비트 실수형 깊이 이미지 데이터 저장 변수 초기화
+        self._head_2_joint = 0.0  # head_2_joint 현재 위치 (joint_states 콜백에서 업데이트)
         
         # 4종 상품별 HSV 색상 공간 임계치 정의 딕셔너리
         self.color_ranges = {
@@ -53,6 +54,7 @@ class ObjectDetector(Node):
         # ROS 2 토픽 서브스크라이버 선언
         self.rgb_sub = self.create_subscription(Image, '/head_front_camera/rgb/image_raw', self.rgb_callback, 10)
         self.depth_sub = self.create_subscription(Image, '/head_front_camera/depth/image_raw', self.depth_callback, 10)
+        self.joint_sub = self.create_subscription(JointState, '/joint_states', self._joint_state_cb, 10)
         
         # 사용자 명령 입력을 위한 비동기 백그라운드 스레드 생성 및 구동
         self.input_thread = threading.Thread(target=self.user_input_loop)
@@ -74,6 +76,13 @@ class ObjectDetector(Node):
             self.current_depth = self.bridge.imgmsg_to_cv2(msg, "32FC1")
         except Exception as e:
             self.get_logger().error(f'Depth 데이터 수신 에러: {str(e)}')
+
+    def _joint_state_cb(self, msg: JointState):
+        try:
+            idx = msg.name.index('head_2_joint')
+            self._head_2_joint = msg.position[idx]
+        except ValueError:
+            pass
 
     def move_head(self, pan, tilt, duration_sec):
         # 로봇 머리 관절 제어 토픽 발행 함수
@@ -104,10 +113,11 @@ class ObjectDetector(Node):
             mask = cv2.inRange(img_hsv, ranges['lower'], ranges['upper'])
         
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        
+
         detected_list = []
         for contour in contours:
-            if cv2.contourArea(contour) < 150:
+            area = cv2.contourArea(contour)
+            if area < 150:
                 continue
                 
             M = cv2.moments(contour)
@@ -166,7 +176,7 @@ class ObjectDetector(Node):
         
         pose_msg = PoseStamped()
         pose_msg.header.stamp = self.get_clock().now().to_msg()
-        pose_msg.header.frame_id = "head_front_camera_rgb_optical_frame"
+        pose_msg.header.frame_id = "head_front_camera_color_optical_frame"
         pose_msg.pose.position.x = float(x_meters)
         pose_msg.pose.position.y = float(y_meters)
         pose_msg.pose.position.z = float(z_meters)
@@ -180,18 +190,39 @@ class ObjectDetector(Node):
 
     def scan_shelf_environment(self):
         self.get_logger().info('자동 진열대 스캔 시퀀스 가동')
-        self.move_head(0.0, -0.35, 2)
-        
-        # 이미지 갱신 대기 (최대 5초)
+        # -0.45 명령: undershoot 여유 확보 → 실제 -0.30 이하 도달 보장
+        self.move_head(0.0, -0.45, 5)
+
+        # head_2_joint가 -0.30 이하에 실제로 도달할 때까지 폴링 (최대 20초)
+        # 절대값 기준(-0.30): broccoli 가시성 확인된 최소 각도
+        self.get_logger().info(f'고개 -0.30rad 이하 도달 대기 중... (현재: {self._head_2_joint:.3f}rad)')
+        start_wait = time.time()
+        while self._head_2_joint > -0.32:
+            if time.time() - start_wait > 20.0:
+                self.get_logger().warn(
+                    f'고개 도달 타임아웃 (20s 초과). 현재: {self._head_2_joint:.3f}rad → 그냥 진행')
+                break
+            time.sleep(0.1)
+        else:
+            self.get_logger().info(
+                f'고개 도달 확인 ({time.time() - start_wait:.1f}s). 현재: {self._head_2_joint:.3f}rad')
+
+        # 고개가 이동 중인 상태에서 캡처되는 것을 방지하기 위해 0.5초 대기
+        time.sleep(0.5)
+
+        # 고개 도달 완료 후 이전 프레임 제거 → 목표 각도의 새 이미지만 사용
+        # (move_head 전에 None으로 초기화하면 고개 이동 중 이미지가 들어와 버리는 타이밍 버그 발생)
+        self.current_rgb = None
+        self.current_depth = None
+
+        # 새 프레임 도착 대기
         self.get_logger().info('카메라 이미지 최신화 대기 중...')
         start_wait = time.time()
-        # 데이터가 None이거나, 카메라가 회전 중일 수 있으니 충분히 대기
-        time.sleep(3.0) 
-        while (self.current_rgb is None or self.current_depth is None) and (time.time() - start_wait < 5.0):
-            time.sleep(0.5)
-            
+        while (self.current_rgb is None or self.current_depth is None) and (time.time() - start_wait < 3.0):
+            time.sleep(0.1)
+
         self.get_logger().info('이미지 수신 확인됨, 스캔 시작')
-        
+
         current_inventory = {}
         for item in self.color_ranges.keys():
             found_objects = self.detect_all_objects(item)
@@ -218,7 +249,7 @@ class ObjectDetector(Node):
                 depth_val = self.current_depth[cy, cx]
                 # 수치 유효성 검사 및 하드웨어 물리 반경 조건식 판별
                 if not np.isnan(depth_val) and not np.isinf(depth_val):
-                    if 0.5 <= depth_val <= 1.0:
+                    if 0.4 <= depth_val <= 1.0:  # 원본: 0.5 / 가까운 거리 허용
                         valid_points.append(pt)
             
             if len(valid_points) > 0:
