@@ -63,12 +63,12 @@
           <geometry><box><size>5.0 0.1 2.5</size></box></geometry>
         </collision>
         <visual name="s_v_right">
-          <pose>3.5 -4 0 0 0 0</pose>
-          <geometry><box><size>5.0 0.1 2.5</size></box></geometry>
+          <pose>4.0 -4 0 0 0 0</pose>
+          <geometry><box><size>4.0 0.1 2.5</size></box></geometry>
         </visual>
         <collision name="s_c_right">
-          <pose>3.5 -4 0 0 0 0</pose>
-          <geometry><box><size>5.0 0.1 2.5</size></box></geometry>
+          <pose>4.0 -4 0 0 0 0</pose>
+          <geometry><box><size>4.0 0.1 2.5</size></box></geometry>
         </collision>
       </link>
     </model>
@@ -140,7 +140,7 @@
     <!-- 바나나 x2 (노란색) -->
     <model name="banana_1">
       <static>false</static>
-      <pose>8.0 6.5 0.83 0 0 0</pose>
+      <pose>8.0 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -156,7 +156,7 @@
 
     <model name="banana_2">
       <static>false</static>
-      <pose>8.2 6.5 0.83 0 0 0</pose>
+      <pose>8.1 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -173,7 +173,7 @@
     <!-- 사과 x2 (빨간색) -->
     <model name="apple_1">
       <static>false</static>
-      <pose>9.0 6.5 0.83 0 0 0</pose>
+      <pose>9.1 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -189,7 +189,7 @@
 
     <model name="apple_2">
       <static>false</static>
-      <pose>9.2 6.5 0.83 0 0 0</pose>
+      <pose>9.2 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -206,7 +206,7 @@
     <!-- 브로콜리 x2 (초록색) -->
     <model name="broccoli_1">
       <static>false</static>
-      <pose>1.0 6.5 0.83 0 0 0</pose>
+      <pose>0.75 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -222,7 +222,7 @@
 
     <model name="broccoli_2">
       <static>false</static>
-      <pose>1.2 6.5 0.83 0 0 0</pose>
+      <pose>0.85 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -239,7 +239,7 @@
     <!-- 당근 x2 (주황색) -->
     <model name="carrot_1">
       <static>false</static>
-      <pose>1.8 6.5 0.83 0 0 0</pose>
+      <pose>1.85 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
@@ -255,7 +255,7 @@
 
     <model name="carrot_2">
       <static>false</static>
-      <pose>2.0 6.5 0.83 0 0 0</pose>
+      <pose>1.95 6.23 0.83 0 0 0</pose>
       <link name="l">
         <inertial><mass>0.1</mass></inertial>
         <collision name="c">
