@@ -118,3 +118,7 @@ Claude Code (VS Code) 활용
   * [pymoveit2 GitHub 레포지토리](https://github.com/peterdavidfagan/pymoveit2) — MoveIt2 Python Wrapper 관련 문서
   * [MoveIt2 공식 가이드 문서](https://moveit.picknik.ai/humble/index.html) — Cartesian path 및 Planning Scene 설정
   * [ROS2 Humble 공식 가이드 문서](https://docs.ros.org/en/humble/) — TF2, MultiThreadedExecutor, ReentrantCallbackGroup을 활용한 동시성 제어
+
+## 영상, 깃허브 링크 
+youtu.be/vJhfu0eixjM
+https://github.com/2026-Intelligent-Robotics
