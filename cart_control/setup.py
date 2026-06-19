@@ -26,6 +26,7 @@ setup(
             'human_following = cart_control.human_following:main',
             'shelf_docking = cart_control.shelf_docking:main',
             'object_detector = cart_control.object_detector:main',
+            'picking_node = cart_control.picking_node:main',
         ],
     },
 )
